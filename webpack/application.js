@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
+import Contact from './components/contact.js'
 
 class App extends Component {
   render () {
@@ -50,18 +51,6 @@ var About = React.createClass({
       );
     }
 });
-
-class Contact extends Component {
-  render() {
-      return (
-        <div>
-          <h2>GOT QUESTIONS?</h2>
-          <p>The easiest thing to do is join a chat from our <a href="http://hash14.com">webpage</a>.
-          </p>
-        </div>
-      );
-    }
-}
 
 
 render(
