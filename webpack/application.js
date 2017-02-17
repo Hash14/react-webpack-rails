@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { render } from 'react-dom'
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
 import Contact from './components/contact.js'
+import Home from './components/home.js'
+import About from './components/about.js'
 
 class App extends Component {
   render () {
@@ -20,38 +22,6 @@ class App extends Component {
     )
   }
 }
-
-var Home = React.createClass({
-  render: function() {
-      return (
-        <div>
-          <h2>Hey there!</h2>
-          <p>Welcome to our home page.</p>
-
-          <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
-        </div>
-      );
-    }
-});
-
-var About = React.createClass({
-  render: function() {
-      return (
-        <div>
-          <h2>About Us</h2>
-          <p>We are a software company working on cutting edge technology.</p>
-          <ol>
-            <li>Quality</li>
-            <li>Customer satisfaction</li>
-            <li>Awesome</li>
-            <li>Cool</li>
-            <li>Fun to work</li>
-          </ol>
-        </div>
-      );
-    }
-});
-
 
 render(
         <Router history={browserHistory}>
