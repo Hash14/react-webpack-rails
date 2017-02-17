@@ -51,7 +51,7 @@ var About = React.createClass({
     }
 });
 
-var Contact = React.createClass({
+class Contact extends Component {
   render() {
       return (
         <div>
@@ -61,7 +61,7 @@ var Contact = React.createClass({
         </div>
       );
     }
-});
+}
 
 
 render(
